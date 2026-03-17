@@ -3,13 +3,10 @@ from __future__ import annotations
 from fastapi import FastAPI
 
 from app.alerts.engine import generate_alerts
-from app.archetypes.engine import ArchetypeEngine
 from app.backtesting.engine import BacktestEngine
-from app.catalysts.engine import CanonicalCatalystEngine
-from app.portfolio.construction import build_portfolio
 from app.openclaw.api import router as openclaw_router
+from app.portfolio.construction import build_portfolio
 from app.research.orchestrator import BiotechResearchOrchestrator
-from app.similarity.engine import HistoricalSetup, SimilarityEngine
 
 api = FastAPI(title='Biotech Scout API', version='0.2.0')
 orch = BiotechResearchOrchestrator()

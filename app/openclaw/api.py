@@ -3,7 +3,12 @@ from __future__ import annotations
 from fastapi import APIRouter
 
 from app.openclaw.adapter import OpenClawAdapter
-from app.openclaw.schemas import OpenClawHealth, OpenClawToolCall, OpenClawToolResult, OpenClawToolSpec
+from app.openclaw.schemas import (
+    OpenClawHealth,
+    OpenClawToolCall,
+    OpenClawToolResult,
+    OpenClawToolSpec,
+)
 
 router = APIRouter(prefix='/openclaw', tags=['openclaw'])
 adapter = OpenClawAdapter()

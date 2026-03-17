@@ -2,7 +2,13 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from app.catalysts.schemas import CanonicalCatalyst, CatalystChange, CatalystSourceRecord, CatalystStatus, DatePrecision
+from app.catalysts.schemas import (
+    CanonicalCatalyst,
+    CatalystChange,
+    CatalystSourceRecord,
+    CatalystStatus,
+    DatePrecision,
+)
 
 
 class CanonicalCatalystEngine:

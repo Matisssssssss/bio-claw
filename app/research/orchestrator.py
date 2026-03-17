@@ -29,7 +29,15 @@ from app.agents.implementations import (
     ThesisBullAgent,
 )
 from app.config.settings import get_settings
-from app.research.schemas import Catalyst, CompanyOverview, Dossier, FinancialSignal, RiskBucket, SentimentSignal, TrialSignal
+from app.research.schemas import (
+    Catalyst,
+    CompanyOverview,
+    Dossier,
+    FinancialSignal,
+    RiskBucket,
+    SentimentSignal,
+    TrialSignal,
+)
 from app.scoring.engine import BiotechScoringEngine
 
 

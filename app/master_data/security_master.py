@@ -2,7 +2,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from app.master_data.schemas import AssetMaster, CompanyMaster, EntityResolutionResult, IndicationMaster
+from app.master_data.schemas import (
+    AssetMaster,
+    CompanyMaster,
+    EntityResolutionResult,
+    IndicationMaster,
+)
 
 
 @dataclass

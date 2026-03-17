@@ -28,7 +28,8 @@ def to_markdown(dossier: Dossier) -> str:
         '## Clinical Trial Quality',
     ]
     for a in dossier.clinical_assessment:
-        assn = a.get('assessment', {})
+        raw_assessment = a.get('assessment', {})
+        assn = raw_assessment if isinstance(raw_assessment, dict) else {}
         lines.append(f"- {assn.get('trial_id')}: design={assn.get('design_quality_score')}, endpoint={assn.get('endpoint_quality_score')}, ambiguity={assn.get('ambiguity_risk')}")
 
     lines += [
