@@ -1,0 +1,15 @@
+{
+  "companies": [
+    {"ticker": "NBIX", "name": "Neurocrine Biosciences", "cik": "0000795613"},
+    {"ticker": "SRPT", "name": "Sarepta Therapeutics", "cik": "0000872539"},
+    {"ticker": "ALNY", "name": "Alnylam Pharmaceuticals", "cik": "0001178670"}
+  ],
+  "catalysts": [
+    {"ticker": "NBIX", "type": "pdufa", "title": "Crinecerfont PDUFA", "event_date": "2026-12-15", "source": "manual"},
+    {"ticker": "SRPT", "type": "topline", "title": "DMD trial topline", "event_window_start": "2026-10-01", "event_window_end": "2026-12-31", "source": "clinical"}
+  ],
+  "historical_setups": [
+    {"setup_id": "hist_001", "catalyst_type": "pdufa", "phase": "phase 3", "outcome_return": 0.22},
+    {"setup_id": "hist_002", "catalyst_type": "topline", "phase": "phase 2", "outcome_return": -0.18}
+  ]
+}
